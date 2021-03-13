@@ -129,8 +129,107 @@
       <section id="spa" class="section">
       <br/>
       <br/>
-      <h2>ans</h2>
-      <div id=display_answer>
+      <h2>ans - need to update to pop-up and emphasize and underline words some other time</h2>
+      <h3>
+        Answer to first question: 
+        <br>
+        <br>
+        In the following answer, I will elaborate further on three major differences 
+        <br>
+        between Web 1, 2 and 3.
+        <br>
+        Firstly, Web 1 was mostly consisted of readers, whilst only few content creators were active.  
+        <br>
+        <a href = "https://harvardlawreview.org/" target="_blank">For exmaple,this website for harvard law </a>
+        <br>
+        Web 2 has had a different vision in comparison to Web 1
+        <br>
+        and has focused in social interaction and aspires to encourage users to share
+        <br>
+        therefore transforming many passive users to become active.
+        <br>
+        <a href = "https://facebook.com/" target="_blank">Facebook</a>
+        , 
+        <a href = "https://www.4chan.org/" target="_blank">4Chan</a>
+        and
+        <a href = "https://www.tiktok.com/" target="_blank">TikTok</a>
+         provide great exmaples of that. 
+        <br>
+        <br>
+        Web 3 has taken Web 2 one step further, and has attempted to provide the user with
+        <br>
+        a personal experience, by focusing on distribution of data and use of sophisticated AI and other tools.
+        <br>
+        Secondly and to further explain the aforementioned difference, Web 1's focus was on 
+        <br>
+        the dissemination of information, Web 2's objective was to connect different people around the globe  
+        <br>
+        and Web 3's purpose was to provide widespread information to all.
+        <br>
+        Thirdly, Web 1 was built mostly around companies that cater to consumers' needs 
+        <br>
+        by releasing content they can view. 
+        <br>
+        In stark contrast to Web 1, Web 2 has shifted its focus to people, facillitating 
+        <br>
+        their need to share information. 
+        <br>
+        During the period of Web 2, companies have started to build applications that allow
+        <br>
+        users to share information with each other; e.g. YouTube, MySpace.
+        <br>
+        During Web 3, rather than companies, people have begun to construct applications 
+        <br>
+        that make way for users to interact with each other. 
+        <br>
+        Companies have changed their perspective and have begun to manufacture platforms 
+        <br>
+        in which people can offer their unique services and or content. 
+        <br>
+        <a href = "https://en.wikipedia.org/wiki/TiVo" target="_blank">For example, this site called Tivo</a>
+          which provides a recording program based on personal preferences.        
+        <br>
+        In conclusion, Web 1, 2 and 3 are massively different and so I have presented 
+        <br>
+        three significant differences between them.  
+        <br>
+        <br>
+        Answer to second question:
+        <br>
+        Firstly, a prime example would be a simple search for "harvard law".
+        <br>
+        Web 1 would provide links for website that displays articles of harvard educates,
+        <br>
+        while Web 2 would also provide an option for feedback and perhaps sharing.
+        <br>
+        Web 3 may also provide different articles of American Law of other universities and colleges
+        <br>
+        in the United States.  
+        <br>
+        Secondly, we shall inspect a common search of social networks. 
+        <br>
+        Web 1 would have most likely yielded articles that speculate how such networks
+        <br>
+        should be implemented in the future, since they did not fully function during that period.
+        <br>
+        Web 2 would have provided the user with many different websites that may fulfil his needs,
+        <br>
+        such as Facebook, Instagram or MySpace. 
+        <br>
+        Web 3 focuses on information and therefore provides the user with a list of different 
+        <br>
+        social networks to choose from, along with detailed explanations of each network. 
+        <br>
+        Thirdly, we will take a closer look at Shopping Websites.
+        <br>
+        Web 1 would have provided a variety of different products for the customer to choose from.
+        <br>
+        Web 2 will have implemented the option to comment on certain sellers or products
+        <br>
+        and Web 3 would gather information on every customer in order to enable an unprecedented 
+        <br>
+        shopping experience for each user.     
+        </h3>
       </div>
       <br/>
       <br/>
@@ -158,7 +257,30 @@
       <br/>
       <br/>
       <br/>
-      contact me
+      <h2>Contact me</h2>
+
+      <button id="open btn" class="open-button" onclick="openForm()">Open Form</button>
+      
+      <div class="form-popup" id="contact_form">
+        <form method="POST" action="mailto:tomrob@post.bgu.ac.il" class="form-container">
+      
+          
+          <label for="email"><b>Email</b></label>
+          <input id="email_field"" type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="title"><b>Title</b></label>
+          <input type="text" placeholder="What's on your mind?" name="title" required >
+
+          <label for="body"><b>Body</b></label>
+          <input type="text" placeholder="Please write under 100 characters" maxlength="100" name="body" required>
+      
+          <button type="reset"  class="btn reset">Reset entries</button> 
+          <button type="submit" class="btn send">Send</button>
+          <button id="close_btn" type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  
+        </form>
+      </div>
+
       <br/>
       <br/>
       <br/>
@@ -180,5 +302,18 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>500)
  });​
  </script>
+  <script>
+  function openForm() {
+    document.getElementById("contact_form").style.display = "block";
+    document.getElementById("close_btn").focus();
+    document.getElementById("email_field").focus();
+    document.getElementById("open btn").style.display = "none"
+  }
+  
+  function closeForm() {
+    document.getElementById("contact_form").style.display = "none";
+    document.getElementById("open btn").style.display = "inline"
+  }
+  </script>
 </body>
 </html>
