@@ -26,7 +26,7 @@ ul#l_menu
 	margin-top: 4%;
 	margin-left: 25%;
 	list-style: none;
-	width: 48%;
+	width: 820px;
 	background-color: whitesmoke;
 }
 
@@ -120,7 +120,7 @@ footer
 	opacity: 0.8;
 	margin-bottom: 30px;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 20px;
 	width: 450px;
 	height: 60px;
 	
@@ -264,7 +264,7 @@ h2 > span:after{
 	  border: none;
 	  cursor: pointer;
 	  opacity: 0.8;	
-	  font-size: 28px;
+	  font-size: 20px;
 	  font-weight: bold;
 	  
   }
