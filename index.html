@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <meta name="keywords" content="Harold, הגיל השלישי, סבא, סבתא">
 <meta name="description" content="This website is all about Grandpa Harold.">
+
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="ZwkjmIlI"></script>
+
 </head>
 
 <body>
   <header>
-    <ul id=l_menu>
-      <li><a href="#content">About Me</a></li>
-      <li><a href="#photos">My Photos</a></li>
-      <li><a href="#playlist">My Playlist</a></li>
-      <li><a href="#like_list">Like</a></li>
-      <li><a href="#qrcoder">QR code</a></li>
-      <li><a href="#spa">Q&A</a></li>
-      <li><a href="#contact">Contact Me</a><li>
-      <li><h1 id=meet_harold><br>Meet Harold!</h1></li>
-    </ul>
-      <img src="https://yt3.ggpht.com/ytc/AAUvwng6dFO6S4O_YXLIVPBiEfgicK2HMmxhirKsute2=s900-c-k-c0x00ffffff-no-rj" alt="harold_top" width=200 height=150>
-      <hr>
+    <div id="l_menu_container">
+      <ul id=l_menu>
+        <li><img id="logo" src="https://yt3.ggpht.com/ytc/AAUvwng6dFO6S4O_YXLIVPBiEfgicK2HMmxhirKsute2=s900-c-k-c0x00ffffff-no-rj" alt="harold_top" width=200 height=150></li>
+        <li><a href="#content" class="fa fa-info-circle">About Me</a></li>
+        <li><a href="#photos" class="fa fa-image">My Photos</a></li>
+        <li><a href="#playlist" class="fa fa-video-camera">My Playlist</a></li>
+        <li><a href="#like_list" class="fa fa-thumbs-up">Like</a></li>
+        <li><a href="#qrcoder" class= "fa fa-qrcode" >QR code</a></li>
+        <li><a href="#spa" class="fa fa-address-book-o">Q&A</a></li>
+        <li><a href="#contact" class="fa fa-phone">Contact Me</a><li>
+      </ul>
+    </div>
   </header>
 
     <section id="like" class="section">
@@ -62,14 +67,6 @@
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
       <h2>my photos</h2>
       <div class="row">
         <div class="column">
@@ -89,10 +86,6 @@
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <h2>my playlist</h2>
       <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/album/56290962?tracklist=false" width="560" height="315" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/_J1Kb4cx3oY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -100,8 +93,6 @@
       
       
       <section id="qrcoder" class="section">
-      <br/>
-      <br/>
       <br/>
       <br/>
       <br/>
@@ -127,6 +118,12 @@
       </section>
       
       <section id="spa" class="section">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <br/>
       <br/>
       <h2>ans - need to update to pop-up and emphasize and underline words some other time</h2>
@@ -230,37 +227,16 @@
         <br>
         shopping experience for each user.     
         </h3>
-      </div>
-      <br/>
-      <br/>
-      <br/>
+      </div>  
       </section>
       
     </div>
 
   <footer>
     <section id="contact" class="section">
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <h2>Contact me</h2>
-
       <button id="open btn" class="open-button" onclick="openForm()">Open Form</button>
-      
+
       <div class="form-popup" id="contact_form">
         <form method="POST" action="mailto:tomrob@post.bgu.ac.il?Subject=Get to know Harold" class="form-container" autocomplete="on">
       
@@ -277,11 +253,7 @@
   
         </form>
       </div>
-
-      <br/>
-      <br/>
-      <br/>
-      </section>
+    </section>
   </footer>
 
 
@@ -312,5 +284,7 @@ $(function(){
     document.getElementById("open btn").style.display = "inline"
   }
   </script>
+
+  
 </body>
 </html>
