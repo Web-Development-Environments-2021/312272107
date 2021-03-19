@@ -1,9 +1,4 @@
 
-body
-{
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: italic;
-}
 #content
 {
 	background-image: url("https://cdn.hipwallpaper.com/i/8/90/XSMFH1.jpg");
@@ -22,15 +17,16 @@ header
 	height: 180px;
 	background-color: white;
 	position: fixed;
+	z-index: 10;
 	
 }
 
 ul#l_menu
 {
 	margin-top: 4%;
-	margin-left: 20%;
+	margin-left: 25%;
 	list-style: none;
-	width: 57%;
+	width: 48%;
 	background-color: whitesmoke;
 }
 
@@ -42,7 +38,7 @@ ul#l_menu li
 }
 ul#l_menu li a
 {
-	padding: 20px;
+	padding: 15px;
 	text-decoration: none;
 	color: darkslategray;
 	font-weight: bold;
@@ -74,6 +70,10 @@ ul#like_list
 	position: fixed;;
 	display: block;
 }
+#about
+{
+	padding-top: 25px;
+}
 #content
 {
 	padding-top: 150px;
@@ -85,26 +85,24 @@ h2
 	text-decoration: underline;
 	font-weight: bold;
 	text-decoration-color: darkgray;
+	overflow: hidden;
+	text-align: center;
 }
-.row
-{
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-}
-  
 
-.column 
+.slideShow
 {
-	flex: 50%;
-}
-  
-.column img
-{
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
+	margin: auto;
+	width: 600px;
 	height: 600px;
+	max-height: 100%;
+	max-width: 100%;
+}
+.mySlides
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 80%;
 }
 footer
 {
@@ -120,6 +118,12 @@ footer
 	border: none;
 	cursor: pointer;
 	opacity: 0.8;
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 28px;
+	width: 450px;
+	height: 60px;
+	
   }
   
   /* The popup form - hidden by default */
@@ -158,7 +162,7 @@ footer
   
   /* Set a style for the submit/login button */
   .form-container .btn {
-	background-color: green;
+	background-color: darkslategray;
 	color: white;
 	padding: 16px 20px;
 	border: none;
@@ -170,10 +174,10 @@ footer
   
   /* Add a red background color to the cancel button */
   .form-container .cancel {
-	background-color: red
+	background-color: rgb(133, 125, 125)
   }
   .form-container .reset {
-	background-color: cadetblue
+	background-color: rgba(128, 128, 128, 0.322)
   }
   
   /* Add some hover effects to buttons */
@@ -187,3 +191,84 @@ textarea
 {
 	margin-bottom:20px;
 }
+/* headlines with lines */
+
+h2 > span{
+   position: relative;
+   display: inline-block;
+}
+h2 > span:before, h2 > span:after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   border-bottom: 2px solid;
+   width: 450px; 
+   margin: 0 20px;
+}
+h2 > span:before{
+   right: 100%;
+}
+h2 > span:after{
+   left: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 150px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 70%;
+  }
+  .modal-content p
+  {
+	  text-align: left;
+  }
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  #myBtn
+  {
+	  margin-bottom: 30px;
+	  background-color: rgba(212, 204, 204, 0.664);
+	  font-size: 20px;
+	  background-color: #555;
+	  color: white;
+	  padding: 16px 20px;
+	  border: none;
+	  cursor: pointer;
+	  opacity: 0.8;	
+	  font-size: 28px;
+	  font-weight: bold;
+	  
+  }
+  textarea
+  {
+	  width: 300px;
+  }
